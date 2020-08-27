@@ -54,7 +54,7 @@ $.fn.easyPaginate = function (options) {
         };
         
         var displayNav = function() {
-            htmlNav = '<div class="easyPaginateNav">';
+            htmlNav = '<div class="easyPaginateNav"><center>';
             
             if(plugin.settings.firstButton) {
                 htmlNav += '<a href="#'+plugin.settings.hashPage+':1" title="First page" rel="1" class="first">'+plugin.settings.firstButtonText+'</a>';
@@ -76,7 +76,7 @@ $.fn.easyPaginate = function (options) {
                 htmlNav += '<a href="#'+plugin.settings.hashPage+':'+plugin.settings.pages+'" title="Last page" rel="'+plugin.settings.pages+'" class="last">'+plugin.settings.lastButtonText+'</a>';
             }
             
-            htmlNav += '</div>';
+            htmlNav += '</center></div>';
             plugin.nav = $(htmlNav);
             plugin.nav.css({
                 'width': plugin.el.width()

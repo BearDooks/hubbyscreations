@@ -10,20 +10,14 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
   <link rel="stylesheet" href="/fonts/icomoon/style.css">
-
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/magnific-popup.css">
   <link rel="stylesheet" href="/css/jquery-ui.css">
   <link rel="stylesheet" href="/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="/css/slick.css">
-  <link rel="stylesheet" href="/css/slick-theme.css">
-
-
-
   <link rel="stylesheet" href="/css/aos.css">
-
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/nanogallery2.min.css">
 
 </head>
 
@@ -86,12 +80,20 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="slick_photo">
-              <img src="/images/wine_caddy_1.jpg" alt="Image" class="img-fluid">
-              <img src="/images/wine_caddy_2.jpg" alt="Image" class="img-fluid">
-              <img src="/images/wine_caddy_3.jpg" alt="Image" class="img-fluid">
-              <img src="/images/wine_caddy_4.jpg" alt="Image" class="img-fluid">
+            <div id="my_nanogallery2" data-nanogallery2='{
+              "thumbnailWidth":   "auto XS80 SM120",
+              "thumbnailHeight":  "400 XS80 SM120",
+              "thumbnailDisplayTransition": "flipDown",
+              "thumbnailDisplayTransitionDuration": 1000,
+              "galleryDisplayMode": "pagination",
+              "galleryMaxRows": 1
+            }'>
+            <a href="/images/wine_caddy_1.jpg" data-ngthumb="/images/wine_caddy_1.jpg"></a>
+            <a href="/images/wine_caddy_2.jpg" data-ngthumb="/images/wine_caddy_2.jpg"></a>
+            <a href="/images/wine_caddy_3.jpg" data-ngthumb="/images/wine_caddy_3.jpg"></a>
+            <a href="/images/wine_caddy_4.jpg" data-ngthumb="/images/wine_caddy_4.jpg"></a>
             </div>
+
           </div>
           <div class="col-md-6">
             <h2 class="text-black">Wine Caddy</h2>
@@ -172,8 +174,9 @@
   <script src="/js/aos.js"></script>
   <script src="/js/include.js"></script>
   <script src="/js/main.js"></script>
-  <script src="/js/slick.min.js"></script>
   <script src="/js/featured-product.js"></script>
+  <script src="/js/jquery.nanogallery2.min.js"></script>
+
 
 </body>
 
